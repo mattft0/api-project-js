@@ -1,0 +1,451 @@
+<html>
+<head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"><!-- fontawesom cdn link -->
+    <link href="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- font --> 
+    
+</head>
+
+<body>
+
+    <div class="top-header bg-primary">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-7 mt-2">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Payment</a></li>
+          
+            </ul>
+        </div>
+        <div class="col-md-5 mt-2 ">
+            <h6><i class="fas fa-phone-alt mr-1"></i>  345 457 4968 </h6>
+        </div>
+    </div> 
+</div>
+</div>
+
+<div class="container mt-4" id="top-logo">
+    <div class="row">
+        <div class="col-md-2" style="right: 5%;">
+            <!-- Just an image -->
+<nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png">
+      
+    </a>
+  </nav>
+        </div>
+        <div class="col-md-7" id="searchbar">
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3 mt-2" id="icons">
+          <div style="cursor: pointer;" class="circle float-right" data-toggle="modal" data-target="#loginModal" data-toggle="tooltip" data-placement="top" title="LOGIN & SIGNUP"><i class="fas fa-user text-primary"></i></div>
+          
+         <a href="cart.html"> <div class="circle float-right mr-2"><i class="fas fa-shopping-cart text-primary"></i><sup><span class="badge badge-danger" style="width: 23px;">0</span></sup></div>
+         </a>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div class="container" style="height: 30px;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 30px;">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pl-4" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <span> ≡ All Category</span></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Foods and Drink</a>
+                      <a class="dropdown-item" href="#">Home interior</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Category 1</a>
+                      <a class="dropdown-item" href="#">Category 2</a>
+                      <a class="dropdown-item" href="#">Category 3</a>
+                    </div>
+                  </li>
+                <li class="nav-item active">
+              <a class="nav-link" href="#">Fashion <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Supermarket </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Electronics</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Baby & Toys</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Fitness sport </a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Clothing</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Furnitures</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+</div>
+ <hr>
+
+<div class="container mt-5 mb-5" id="productPage">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="card">
+           <img src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg" class="figure-img img-fluid rounded">
+          
+        </div>
+        </div>
+
+        <div class="col-md-7">
+        <h5>Adidas Cool T-Shirt</h5>
+        <p class="text-muted">T-SHIRTS</p>
+        <div class="ratings">
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="far fa-star text-primary"></i>
+
+          </div>
+          <h5 class="pt-4">$179.00</h5>
+          <p class="description text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <hr>
+          <table class="table mt-2">
+           
+            <tbody>
+              <tr>
+                <th scope="row">Product</th>
+                <td>T-SHIRT IE-106</td>
+              </tr>
+              <tr>
+                <th scope="row">Color</th>
+                <td>Blue</td>
+              </tr>
+              <tr>
+                <th scope="row">Delivery</th>
+                <td>Bangalore, KA, India - 36</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        
+          <div class="row">
+            <div class="col-md-3">
+             <div class="input-group">
+                      <div class="input-group-prepend" onclick="add1()">
+                        <span class="input-group-text"><i class="fas fa-plus"></i></span>
+                      </div>
+          
+                      <input type="text" class="numberbox1 form-control" value="0">
+                      <div class="input-group-append" onclick="subtract1()">
+                          <span class="input-group-text"><i class="fas fa-minus"></i></span>
+                      </div>
+                    </div>
+            </div>
+          
+            <div class="col-md-5">
+             <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Small</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Medium</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">Large</label>
+          </div>
+            </div>
+            
+          </div><!-- row -->
+          <div id="purchase-btn">
+          <button type="button" class="btn btn-sm btn-primary"><a class="text-white" href=""> Buy Now </a></button>
+          &nbsp;
+          <button type="button" class="btn btn-sm btn-light"><a class="text-black" href=""> <i class="fas fa-shopping-cart pr-2"></i>  Add to Cart </a> </button>
+        </div>
+        </div>
+        <div class="container">
+        <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">DESCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">INFORMATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">REVIEWS (1)</a>
+          </li>
+        </ul>
+        <div class="tab-content w-100 pt-5" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h5>Product Description</h5>
+        <p class="text-muted">T-SHIRTS</p>
+        <div class="ratings">
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="far fa-star text-primary"></i>
+
+          </div>
+          <h5 class="pt-4">$179.00</h5>
+          <p class="description text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h5>Additional Information</h5>
+            <br>
+            <table class="table table-striped table-bordered">
+           <thead>
+            <tr>
+              <th scope="row">Weight</th>
+              <td><i>0.3 kg</i> </td>
+            </tr>
+           </thead>
+           
+              <tbody>
+                
+                <tr>
+                  <th scope="row">Dimensions</th>
+                  <td><i>50 × 60 cm</i></td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="review-rating float-right mt-5">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="far fa-star text-primary"></i>
+  
+            </div>
+            <h5>1 review for Fantasy T-shirt</h5>
+            <br>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/placeholder1.jpg" alt="IMAGE LOADING" class="img-fluid">
+                  </div>
+                  <div class="col-md-10">
+                    <p class="mb-1"><strong> Marthasteward </strong> – Jan 28, 2020 </p>
+                    <p>Nice one, love it!</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <hr>
+            
+             <h5 class="mt-3 pt-2">Add a Review</h5>
+             <p>Your email address will not be published.</p>
+             <div class="ratings">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="far fa-star text-primary"></i>
+  
+            </div>
+            <form class="mt-3" id="addreview">
+              <div class="form-group text-muted">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your Review"></textarea>
+              </div>
+              <div class="form-group text-muted">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group text-muted">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              
+              <div class="text-right">
+              <button type="submit" class="btn btn-primary">Add a Review</button>
+            </div>
+            </form>
+          
+          </div>
+        </div>
+        <br><br>
+        <hr>
+        <br>
+        <h4 class="text-center text-muted">Related products</h4>
+        <br><br>
+        <div class="row" id="relatedProducts">
+        <div class="col-md-3">
+          <div class="overlay"> 
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg" class="zoom-in figure-img img-fluid">
+           </div>
+          
+          <h5 class="text-center text-dark mt-3">Adidas Cool T-Shirt</h5>
+          <p class="cost text-center text-dark mt-2">$179.00</p>
+        </div>
+        <div class="col-md-3">
+          <div class="overlay"> 
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" class="zoom-in figure-img img-fluid">
+           </div>
+          
+          <h5 class="text-center text-dark mt-3">Red Hoodie</h5>
+          <p class="cost text-center text-dark mt-2">$35.99</p>
+        </div>
+        <div class="col-md-3">
+          <span class="badge badge-pill badge-primary" id="sale">Sale</span>
+          <div class="overlay"> 
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg" class="zoom-in figure-img img-fluid">
+           </div>
+
+          <h5 class="text-center text-dark mt-3">Grey Sweater</h5>
+          <p class="cost text-center text-danger mt-2">$21.99 <strike class="text-secondary"> $36.99 </strike></p>
+        </div>
+        <div class="col-md-3">
+          <div class="overlay"> 
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg" class="zoom-in figure-img img-fluid">
+         </div>
+          
+          <h5 class="text-center text-dark mt-3">Black Denim Jacket</h5>
+          <p class="cost text-center text-dark mt-2">$99.99</p>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  <footer>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Help</h5>
+          <ul>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Account</h5>
+          <ul>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+            <li><a href="">Content</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Social</h5>
+          <ul>
+            <li><a href=""><i class="fab fa-facebook"></i>  Content</a></li>
+            <li><a href=""><i class="fab fa-youtube"></i> Content</a></li>
+            <li><a href=""><i class="fab fa-twitter"></i> Content</a></li>
+            <li><a href=""><i class="fab fa-instagram"></i>  Content</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer pt-5 pb-5" id="footer">
+    <div class="container">
+      <span class="text-muted float-left"><p id="copyright">&copy; 2019 Company name</p></span>
+      <span class="float-right"> <p id="footerInfo"> info@pixsellz.io | +879-332-9375 | Street name 123, Avanue abc </p> </span>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-light" id="exampleModalCenterTitle">Login</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-light">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+              <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else!</small>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Keep me Logined</label>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-sm text-light"><a href="profile.html" class="text-light">Login</a></button>
+            <a href="register.html" class="float-right text-muted">Not a Member? Register</a>
+          </form>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
