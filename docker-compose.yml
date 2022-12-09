@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: carshop
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_HOST: localhost
+    ports:
+      - "3000:3000"
+    volumes:
+      - db-data:/var/lib/mysql
+
+  server:
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - ./server:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - DATABASE_URL=mysql://user:password@mysql:3000/app
+    command: sh -c "npm install && npm start"
+
+volumes:  
+
+  db-data: {}
