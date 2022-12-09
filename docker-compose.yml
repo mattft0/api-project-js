@@ -18,10 +18,10 @@ services:
     volumes:
       - ./server:/app
     ports:
-      - "3000:3000"
+      - "3000:3001"
     environment:
       - PORT=3000
-      - DATABASE_URL=mysql://user:password@mysql:3000/app
+      - DATABASE_URL=mysql://user:password@mysql:3001/app
     command: sh -c "npm install && npm start"
 
 volumes:  
