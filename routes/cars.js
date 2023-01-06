@@ -11,21 +11,24 @@ router.get(
   "/cars",
   checkAuth,
   checkRole({ minRole: checkRole.ROLES.ADMIN }),
-  (req, res) => {
-    Car.findAll({
+  async (req, res) => {
+    const cars = await Car.findAll({
       where: req.query,
       attributes: { exclude: ["password"] },
-    }).then((data) => res.json(data));
+    });
+    res.json(cars);
   }
 );
 
 // Créer une annonce
-router.post("/cars", (req, res, next) => {
-  const car = new Car(req.body);
-  car
-    .save()
-    .then((data) => res.status(201).json(data))
-    .catch(next);
+router.post("/cars", checkAuth, async (req, res, next) => {
+  try {
+    const car = new Car(req.body);
+    const savedCar = await car.save();
+    res.status(201).json(savedCar);
+  } catch (error) {
+    next(error);
+  }
 });
 
 // Récupérer une annonce
@@ -41,36 +44,45 @@ router.get("/cars/:id", async (req, res) => {
 });
 
 // Update une annonce
-router.put("/cars/:id", checkAuth, (req, res, next) => {
-  if (req.car.id !== parseInt(req.params.id)) throw new ForbiddenError();
+router.put("/cars/:id", checkAuth, async (req, res, next) => {
+  const user = req.user;
+  const carId = parseInt(req.params.id);
 
-  Car.update(req.body, {
-    where: { id: parseInt(req.params.id) },
-    individualHooks: true,
-  })
-    .then(([nbUpdated]) => {
-      if (!nbUpdated) return res.sendStatus(404);
-      Car.findByPk(parseInt(req.params.id), {
-        attributes: { exclude: "password" },
-      }).then((car) => res.json(car));
-    })
-    .catch(next);
+  const car = await Car.findByPk(carId);
+  if (!car) {
+    res.sendStatus(404);
+  } else if (car.userId !== user.id) {
+    next(new ForbiddenError());
+  } else {
+    try {
+      const updatedCar = await car.update(req.body, {
+        individualHooks: true,
+      });
+      res.json(updatedCar);
+    } catch (error) {
+      next(error);
+    }
+  }
 });
 
 // Delete un utilisateur
-router.delete("/cars/:id", checkAuth, (req, res) => {
-  if (req.car.id !== parseInt(req.params.id)) throw new ForbiddenError();
-  Car.destroy({
-    where: {
-      id: parseInt(req.params.id),
-    },
-  }).then((nbDeleted) => {
+router.delete("/cars/:id", checkAuth, async (req, res) => {
+  const user = req.user;
+  const carId = parseInt(req.params.id);
+
+  const car = await Car.findByPk(carId);
+  if (!car) {
+    res.sendStatus(404);
+  } else if (car.userId !== user.id) {
+    next(new ForbiddenError());
+  } else {
+    const nbDeleted = await Car.destroy({
+      where: {
+        id: carId,
+      },
+    });
     if (nbDeleted) {
       res.sendStatus(204);
     } else {
-      res.sendStatus(404);
+      res.send 
     }
-  });
-});
-
-module.exports = router;
