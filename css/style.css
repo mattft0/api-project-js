@@ -588,6 +588,7 @@ a:hover {
 /* For Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
+<<<<<<< HEAD
     -webkit-appearance: none;
     margin: 0;
 }
@@ -596,3 +597,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+=======
+  margin: 0;
+}
+>>>>>>> 99b369243d547cbd575f1fae617ebce101c3431b
