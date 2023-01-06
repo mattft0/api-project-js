@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const ForbiddenError = require("../backend/errors/ForbiddenError");
+const ForbiddenError = require("../errors/ForbiddenError");
 const checkAuth = require("../middlewares/checkAuth");
 const checkRole = require("../middlewares/checkRole");
-const { Car } = require("../backend/models");
+const { Car } = require("../models");
 
 const router = new Router();
 
