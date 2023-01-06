@@ -84,5 +84,5 @@ router.delete("/cars/:id", checkAuth, async (req, res) => {
     if (nbDeleted) {
       res.sendStatus(204);
     } else {
-      res.send 
+      res.send }
       
